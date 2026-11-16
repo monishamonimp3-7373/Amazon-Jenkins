@@ -6,11 +6,6 @@ pipeline {
     }
     stages {
 
-        stage('pull scm git ') {
-            steps {
-                git branch: 'main', url: 'https://github.com/monishamonimp3-7373/Amazon-Jenkins.git'
-            }
-        }
         stage('compile ') {
             steps {
                 sh 'mvn compile'
